@@ -15,6 +15,21 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h1,
+h2{
+  font-family: 'Permanent Marker', cursive;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+/* ==================
+
+Navigation bar
+
+===================== */
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -24,21 +39,27 @@ body {
   margin-right: auto;
   top:0;
 }
-.topnav a {
-  float: left;
+
+.topnav li {
   display: block;
+}
+
+.topnav li a {
+  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
   font-size: 17px;
-
+  font-family: 'Permanent Marker', cursive;
 }
-.topnav a:hover {
+
+.topnav li a:hover {
   background-color: #ddd;
   color: green;
 }
-.topnav a.active {
+
+.topnav li a.active {
   background-color:skyblue;
   color: white;
 }
@@ -99,6 +120,13 @@ Home Page
   margin-right: auto;
   margin-bottom: 50px;
 }
+
+/* ==================
+
+Cast
+
+===================== */
+
 
 
 /* ==================

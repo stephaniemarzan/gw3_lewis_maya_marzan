@@ -7,12 +7,16 @@
     <title>Friends - The Cast</title>
 
     <!-- css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Fonts -->
-    <link href=”https://fonts.googlea- pis.com/css2?family=Perma- nent+Marker&display=swap” rel=”stylesheet”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <link href=”https://fonts.googlea- pis.com/css2?family=Lato:w- ght@300;400;700&display=swap” rel=”stylesheet”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   </head>
 
@@ -22,6 +26,13 @@
 
       <nav>
         <ul>
+        <div class="topnav" id="myTopnav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cast.html">Cast</a></li>
+          <li><a href="index.html">Most Popular</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a></li>
+        </div>
         </ul>
       </nav>
 
@@ -58,6 +69,18 @@
 
     </section>
 
+    <script>
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
     </main>
     </body>
     </html>
