@@ -22,10 +22,28 @@ h2{
   text-align: center;
 }
 
+h1{
+  margin-top: 2%;
+}
+
 p{
   font-family: 'Lato', sans-serif;
 }
 
+
+.castimg,
+.seasonsimg{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    object-fit: cover;
+}
+
+.cast-content,
+.seasons-content{
+  max-width: 80%;
+  margin: 0 auto;
+}
 /* ==================
 
 Navigation bar
@@ -34,7 +52,7 @@ Navigation bar
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #42a2d6;
   position: fixed;
   width: 100%;
   margin-left: auto;
@@ -57,12 +75,12 @@ Navigation bar
 }
 
 .topnav li a:hover {
-  background-color: #ddd;
-  color: green;
+  background-color: #ffdc00;
+  color: #ff4238;
 }
 
 .topnav li a.active {
-  background-color:skyblue;
+  background-color:#ff4238;
   color: white;
 }
 .topnav .icon {
@@ -87,14 +105,6 @@ Home Page
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-}
-
-.aboutshow{
-  height:20px;
-  width: 100%;
-  font-size: 1rem;
-  text-align: center;
-
 }
 
 .column {
@@ -130,16 +140,7 @@ Cast
 ===================== */
 
 .castimg{
-    width: 100%;
-    height: 400px;
-    margin-top: 100px;
-    object-fit: cover;
-    object-position: top;
-}
-
-.cast-content{
-  max-width: 80%;
-  margin: 0 auto;
+  object-position: top;
 }
 
 .actor p{
@@ -155,6 +156,76 @@ Cast
 .actor h2{
   margin-top: 5%;
 }
+
+.jennifer,
+.ross{
+  border: 4px solid #ffdc00;
+}
+
+.monica,
+.chandler{
+  border: 4px solid #42a2d6;
+}
+
+.phoebe,
+.joey{
+  border: 4px solid #ff4238;
+}
+
+/* ==================
+
+seasons
+
+===================== */
+
+.seasonsimg{
+  object-position: bottom;
+}
+
+.seasonlist img{
+  width:100%;
+  height:auto;
+  margin: 3% 0 1%;
+}
+
+.seasonlist h3{
+  margin: 1% 0;
+}
+
+.seasonlist h1{
+  margin-bottom: 1%;
+}
+
+.season1img,
+.season4img,
+.season7img,
+.season10img{
+  border: 4px solid #ffdc00;
+}
+
+.season2img,
+.season5img,
+.season8img{
+  border: 4px solid #42a2d6;
+}
+
+.season3img,
+.season6img,
+.season9img{
+  border: 4px solid #ff4238;
+}
+
+.seasonlist a{
+  text-align: center;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 3%;
+  color: #ff4238;
+}
+
+.seasonlist a:visited {
+  color: #42a2d6;
+}
 /* ==================
 
 Footer
@@ -162,11 +233,14 @@ Footer
 
 footer {
   text-align: center;
-  padding: 3px;
-  background-color:skyblue;
+  background-color:#42a2d6;
   color: white;
-  bottom: 0;
   width: 100%;
+  margin-top: 3%;
+}
+
+footer p{
+  padding: 2% 0;
 }
 
 /* Media Queries */
@@ -265,7 +339,7 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 30%;
-    margin:0 auto;
-  }
-
+    margin: 0 auto;
+    align-content: space-evenly;
 }
+  }
