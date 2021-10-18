@@ -143,6 +143,10 @@ Cast
   object-position: top;
 }
 
+.castimage img:hover{
+  transform: scale(1);
+}
+
 .actor p{
   margin: 3% 0;
 }
@@ -227,6 +231,9 @@ seasons
   color: #42a2d6;
 }
 
+.seasons a:hover {
+  color: #595959;
+}
 .seasons img:hover{
 	transform: scale(1);
 }
