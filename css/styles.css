@@ -34,9 +34,9 @@ p{
 .castimg,
 .seasonsimg{
     width: 100%;
-    height: 400px;
+    height: 100%;
     margin-top: 100px;
-    object-fit: cover;
+
 }
 
 .cast-content,
@@ -177,6 +177,7 @@ Cast
 }
 
 .jennifer:hover,
+.column:hover,
 .ross:hover,
 .monica:hover,
 .chandler:hover,
@@ -212,11 +213,11 @@ seasons
 
 ===================== */
 
-.seasonsimg{
+.seasonsimg, .topimg{
   object-position: bottom;
 }
 
-.seasonsimg{
+.seasonsimg, .topimg{
   animation-duration: 3s;
   animation-name: slidein;
   animation-timing-function:ease;
@@ -352,9 +353,10 @@ footer p{
 
   .aboutshow{
     height:20px;
-    width: 100%;
+    max-width: 100%;
     font-size: 1rem;
     text-align: center;
+
   }
 
   .column {
@@ -412,6 +414,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
   }
 
   .seasons{
@@ -420,14 +423,19 @@ footer {
       max-width: 45%;
       margin: 0 auto;
       align-content: space-evenly;
+
   }
 
   .all-seasons img{
       width: 100%;
       height: 300px;
       object-fit: cover;
+
     }
 
     .all-seasons a{
       margin: 2% 0 4%;
+
+
   }
+}
